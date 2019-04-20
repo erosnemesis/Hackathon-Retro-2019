@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>90's Kids</title>
+    <script
+            src="https://code.jquery.com/jquery-3.4.0.min.js"
+            integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css" />
+
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm">
+            <iframe class="theframe" name="result" id="result" > </iframe>
+        </div>
+        <div class="col-sm">
+            <iframe class="theframe" name="original" id="original" > </iframe>
+        </div>
+    </div>
+</div>
+
+<div id="test">
+
+<script>
+    $.get("http://siniseus.com/retro/htmlParser.php?url=http://mlsenterpriseinc.com")
+     .done(function(data){
+	$("#result").contents().find("html").html(data);
+	console.log("loaded successfully");
+	console.log(data);
+	});	
+</script>
+
+</html>

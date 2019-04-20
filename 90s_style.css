@@ -1,0 +1,20 @@
+body {
+    background-image: url(sparkles.gif);
+	background-repeat: repeat;
+	color: #B633FF; 
+}
+
+#page-wrap {
+    margin-left: 300px;
+    margin-right: 300px;
+	font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;	
+	color: #B633FF; 
+}
+
+*{
+	color: #B633FF; 
+}
+
+div {
+  color: #B633FF;
+}
