@@ -1,7 +1,8 @@
 body {
     background-image: url(sparkles.gif);
 	background-repeat: repeat;
-	color: #B633FF; 
+	color: #B633FF;
+	top: 0px;
 }
 
 #page-wrap {
@@ -9,12 +10,58 @@ body {
     margin-right: 300px;
 	font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;	
 	color: #B633FF; 
+	position: relative;
+	top: -120px;
 }
 
 *{
-	color: #B633FF; 
+	color: #B633FF important!; 
 }
 
 div {
   color: #B633FF;
 }
+
+h2{
+	color: #00FFFF !important;
+}
+
+a{
+	color: #FB0102 !important;
+	border-style: outset important!;
+	border-width: 7px important!;
+	border-color: grey important!;
+    
+	background-color: white important!;
+}
+
+#ad{
+  width: 150px;
+  height: 120px;
+  background-image: url(unknown.png);
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  animation-name: example;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0% {
+        transform: translatex(0px) translatey(0px)
+    }
+	25%{
+		transform: translatex(100vw) translatey(25vh);
+	}
+	50%{
+		transform: translatex(-600px) translatey(50vh)
+	}
+	75%{
+		transform: translatex(100vw) translatey(75vh)
+	}
+    100% {
+        transform: translatex(-600px) translatey(100vh);
+    }
+}
+

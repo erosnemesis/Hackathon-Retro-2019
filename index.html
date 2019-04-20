@@ -1,38 +1,24 @@
-<html>
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd%22%3E
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>90's Kids</title>
-    <script
-            src="https://code.jquery.com/jquery-3.4.0.min.js"
-            integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
-            crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="90s_style.css">
 
+	<script >
+		function myFunction(){	
+			window.location.href = "http://siniseus.com/retro/htmlParser.php?url=" + document.getElementById("link_from_user").value;
+		}
+	</script>
+	<title>90's Kids</title>
 </head>
 <body>
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm">
-            <iframe class="theframe" name="result" id="result" > </iframe>
-        </div>
-        <div class="col-sm">
-            <iframe class="theframe" name="original" id="original" > </iframe>
-        </div>
-    </div>
+<marquee><h1>!90's Retrofier!</h1></marquee>
+
+<div style="text-align:center;">
+<input type="text" id="link_from_user" placeholder="Enter your URL here">
+<input type="submit" value="Retrofy" onclick="myFunction()">
 </div>
 
-<div id="test">
-
-<script>
-    $.get("http://siniseus.com/retro/htmlParser.php?url=http://mlsenterpriseinc.com")
-     .done(function(data){
-	$("#result").contents().find("html").html(data);
-	console.log("loaded successfully");
-	console.log(data);
-	});	
-</script>
-
+</body>
 </html>

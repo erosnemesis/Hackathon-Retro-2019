@@ -110,6 +110,9 @@ class HtmlLookup{
 		$new_div = $dom->createElement('div');
 		$new_div->setAttribute('id', 'page-wrap');
 
+		$script = $new_div->appendChild($dom->createElement('div'));
+                $script->setAttribute("id", "ad");
+
 		$parent = $b->parentNode;
 		$clone_body = $b->cloneNode(true);
 
